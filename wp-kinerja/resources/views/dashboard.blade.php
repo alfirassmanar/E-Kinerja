@@ -1,0 +1,87 @@
+@extends('template.index')
+@section('features')
+    <div class="section-title text-center">
+        <h2>Menu Penilaian Kinerja</h2>
+        <input type="text" class="form-control">
+    </div>
+
+    <div class="row" data-aos="fade-up" data-aos-delay="50">
+
+        <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+                <img src="assets/img/svg/paint-palette.svg" alt="img">
+                <h4>creative design</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+                <img src="assets/img/svg/vector.svg" alt="img">
+                <h4>Retina Ready</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+                <img src="assets/img/svg/design-tool.svg" alt="img">
+                <h4>easy to use</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+                <img src="assets/img/svg/asteroid.svg" alt="img">
+                <h4>Free Updates</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+                <img src="assets/img/svg/asteroid.svg" alt="img">
+                <h4>Free Updates</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+                <img src="assets/img/svg/cloud-computing.svg" alt="img">
+                <h4>App store support</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+                <img src="assets/img/svg/pixel.svg" alt="img">
+                <h4>Perfect Pixel</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+                <img src="assets/img/svg/code.svg" alt="img">
+                <h4>clean codes</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+        </div>
+
+    </div>
+@endsection
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+@if ($message = Session::get('error-login'))
+    <script>
+        Swal.fire({
+            icon: 'error',
+            title: 'Email atau Password anda Salah!',
+            text: '{{ $message }}',
+        })
+    </script>
+@endif
